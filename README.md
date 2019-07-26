@@ -23,10 +23,11 @@ video2bvh consists of 3 modules: pose_estimator_2d, pose_estimator_3d and bvh_sk
 
 ## Pre-trained models
 The original models provided by [3d-pose-baseline](https://github.com/una-dinosauria/3d-pose-baseline) and [VideoPose3D](https://github.com/facebookresearch/VideoPose3D) use [Human3.6M](http://vision.imar.ro/human3.6m/description.php) 17-joint skeleton as input format (See [bvh_skeleton/h36m_skeleton.py](https://github.com/KevinLTT/video2bvh/raw/master/bvh_skeleton/h36m_skeleton.py)), but OpenPose's detection result are 25-joint (See OpenPose [output.md](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/output.md#pose-output-format-body_25)). So, we trained these models using 2D pose estimated by OpenPose in [Human3.6M](http://vision.imar.ro/human3.6m/description.php) dataset from scratch.
+
 The training progress is almostly same as the originial implementation. We use subject S1, S5, S6, S7, S8 as the training set, and S9, S11 as the test set. For 3d-pose-baseline, the best MPJPE is 64.12 mm (Protocol #1), and for VideoPose3D the best MPJPE is 58.58 mm (Protocol #1). The pre-trained models can be downloaded from following links.
 
 * [Google Drive](https://drive.google.com/drive/folders/1M2s32xQkrDhDLz-VqzvocMuoaSGR1MfX?usp=sharin)
-* [Baidu Disk](https://drive.google.com/drive/folders/1M2s32xQkrDhDLz-VqzvocMuoaSGR1MfX?usp=sharin) (code: fmpz)
+* [Baidu Disk](https://pan.baidu.com/s/1-SRaS5FwC30-Pf_gL8bbXQ) (code: fmpz)
 
 After you download the `models` folder, place or link it under the root directory of this project.
 
