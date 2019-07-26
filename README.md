@@ -15,7 +15,7 @@ video2bvh consists of 3 modules: pose_estimator_2d, pose_estimator_3d and bvh_sk
 
 
 ## Dependencies
-- [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose): See OpenPose offical [installation.md](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/installation.md#python-api) for help. Note to turn on the `BUILD_PYTHON` flag while build the OpenPose.
+- [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose): See OpenPose offical [installation.md](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/installation.md#python-api) for help. Note to turn on the `BUILD_PYTHON` flag while building.
 - [pytorch](https://github.com/pytorch/pytorch).
 - [python-opencv](https://opencv.org/).
 - [numpy](https://numpy.org/)
@@ -33,9 +33,7 @@ After you download the `models` folder, place or link it under the root director
 
 
 ## Quick Start
-Open [demo.ipynb](https://github.com/KevinLTT/video2bvh/raw/master/demo.ipynb) in Jupyter Notebook and follow the instructions.
-
-As you will see in the [demo.ipynb](https://github.com/KevinLTT/video2bvh/raw/master/demo.ipynb), video2bvh converts video to bvh file with 3 main steps.
+Open [demo.ipynb](https://github.com/KevinLTT/video2bvh/raw/master/demo.ipynb) in Jupyter Notebook and follow the instructions. As you will see in the [demo.ipynb](https://github.com/KevinLTT/video2bvh/raw/master/demo.ipynb), video2bvh converts video to bvh file with 3 main steps.
 
 ### 1. Estimate 2D pose from video
 <p align="center">
@@ -54,7 +52,7 @@ As you will see in the [demo.ipynb](https://github.com/KevinLTT/video2bvh/raw/ma
 
 
 ## Retargeting
-Once you get the bvh file, you can easily retarget the motion to other  3D character model with existing tools. The girl model we used is craeted using [MakeHuman](http://www.makehumancommunity.org/), and the demo is rendered with [Blender](https://www.blender.org/). The [MakeWalk](http://www.makehumancommunity.org/wiki/Documentation:MakeWalk) plugin helps us do the retargeting work.
+Once get the bvh file, you can easily retarget the motion to other 3D character model with existing tools. The girl model we used is craeted using [MakeHuman](http://www.makehumancommunity.org/), and the demo is rendered with [Blender](https://www.blender.org/). The [MakeWalk](http://www.makehumancommunity.org/wiki/Documentation:MakeWalk) plugin helps us do the retargeting work.
 
 <p align="center">
 <img src="https://github.com/KevinLTT/video2bvh/raw/master/miscs/demo/cxk_retargeting.gif" width="240">
