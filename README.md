@@ -38,19 +38,27 @@ Open [demo.ipynb](https://github.com/KevinLTT/video2bvh/raw/master/demo.ipynb) i
 As you will see in the [demo.ipynb](https://github.com/KevinLTT/video2bvh/raw/master/demo.ipynb), video2bvh converts video to bvh file with 3 main steps.
 
 ### 1. Estimate 2D pose from video
-![cxk_2d_pose](https://github.com/KevinLTT/video2bvh/raw/master/miscs/demo/cxk_2d_pose.gif)
+<p align="center">
+<img src="https://github.com/KevinLTT/video2bvh/raw/master/miscs/demo/cxk_2d_pose.gif" width="240">
+</p>
 
 ### 2. Estimate 3D pose from 2D pose
-![cxk_3d_pose](https://github.com/KevinLTT/video2bvh/raw/master/miscs/demo/cxk_3d_pose.gif)
+<p align="center">
+<img src="https://github.com/KevinLTT/video2bvh/raw/master/miscs/demo/cxk_3d_pose.gif" width="240">
+</p>
 
 ### 3. Convert 3D pose to bvh motion capture file
-![cxk_bvh](https://github.com/KevinLTT/video2bvh/raw/master/miscs/demo/cxk_bvh.gif)
+<p align="center">
+<img src="https://github.com/KevinLTT/video2bvh/raw/master/miscs/demo/cxk_bvh.gif" width="240">
+</p>
 
 
 ## Retargeting
 Once you get the bvh file, you can easily retarget the motion to other  3D character model with existing tools. The girl model we used is craeted using [MakeHuman](http://www.makehumancommunity.org/), and the demo is rendered with [Blender](https://www.blender.org/). The [MakeWalk](http://www.makehumancommunity.org/wiki/Documentation:MakeWalk) plugin helps us do the retargeting work.
 
-![cxk_retargeting](https://github.com/KevinLTT/video2bvh/raw/master/miscs/demo/cxk_retargeting.gif)
+<p align="center">
+<img src="https://github.com/KevinLTT/video2bvh/raw/master/miscs/demo/cxk_retargeting.gif" width="240">
+</p>
 
 ## TODO
 - [ ] Add more 2D estimators, such as [HRNet](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch) and [PoseResNet](https://github.com/microsoft/human-pose-estimation.pytorch).
