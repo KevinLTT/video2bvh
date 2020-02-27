@@ -35,7 +35,8 @@ def vis_2d_keypoints(
                 cv2.putText(mask, parent, p_pos, cv2.FONT_HERSHEY_SIMPLEX,
                             0.5, (0, 255, 0))
         for child in skeleton.children[parent]:
-            if child not in skeleton.keypoint2index:
+            if child not in skeleton.keypoint2index or \
+              skeleton.keypoint2index[child] < 0:
                 continue
             stack.append(child)
             c_idx = skeleton.keypoint2index[child]
